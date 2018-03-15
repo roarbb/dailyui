@@ -68,6 +68,10 @@ form input {
     padding: 0 0 5px 0;
 }
 
+form input:focus {
+    outline: none;
+}
+
 form input[type=submit] {
     border: 0;
     justify-self: end;
