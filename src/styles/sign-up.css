@@ -1,3 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900|Oswald:400,700');
+
+:root {
+    --white: white;
+    --cherry: #DB3069;
+    --blue: #1985A1;
+    --facebook-blue: #3B5998;
+}
+
+html {
+    background: url(../assets/sign-up-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
-    background: floralwhite;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.site-wrap {
+    display: grid;
+    justify-content: center;
+    height: 100vh;
+}
+
+.signup-box {
+    background-color: var(--white);
+    align-self: center;
+    border-top: 5px solid var(--cherry);
+    padding: 20px;
+    display: grid;
+    grid-gap: 15px;
+    justify-items: center;
+    min-width: 300px;
+}
+
+h1.title {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    justify-self: center;
+}
+
+form {
+    display: grid;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+
+form input {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 1px solid var(--blue);
+    padding: 0 0 5px 0;
+}
+
+form input[type=submit] {
+    border: 0;
+    justify-self: end;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+form input[type=submit]:hover {
+    background-color: var(--cherry);
+}
+
+.facebook-sign-up {
+    background-color: var(--facebook-blue);
+    border: none;
+    color: var(--white);
+    padding: 8px 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.already-registered a {
+    text-decoration: none;
+    color: var(--cherry);
+    font-weight: 700;
+}
+
+.already-registered a:hover {
+    /*text-decoration: underline;*/
+    color: var(--blue);
 }
